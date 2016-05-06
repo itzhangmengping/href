@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>关于href</title>
+  </head>
+  <script type="text/javascript" src="jquery.min.js">
+
+  </script>
+  <body>
+    <!-- 获取href。以及设置href -->
+    <a href="text.html">跳转</a>
+    <script type="text/javascript">
+      var URL = $('a').attr('href')
+      $('a').on('click',function(){
+        $('a').attr('href',URL+'&m=1')
+      })
+    </script>
+  </body>
+</html>
